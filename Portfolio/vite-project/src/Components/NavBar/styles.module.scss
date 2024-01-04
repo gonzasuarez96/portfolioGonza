@@ -1,0 +1,59 @@
+.navbar {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 4rem;
+    border-bottom: 1px solid #00000010;
+
+    .logo{
+        font-size: 20px;
+    }
+
+    .links{
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+
+        li{
+            cursor: pointer;
+            position: relative;
+
+            &:hover{
+                &:before{
+                    opacity: 1;
+                }            
+            }
+
+            &:before{
+                content: '';
+                opacity: 0;
+                transition-duration: .3s;
+                position: absolute;
+                bottom: 0;
+                background-color: black;
+                width: 100%;
+                height: 2px;
+            }
+        }
+
+    }
+
+    .contact{
+        padding: 8px 20px;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        font-weight: 600;
+        border: 1px solid transparent;
+        transition: .3s;
+        font-size: 16px;
+
+        &:hover{
+            background-color: transparent;
+            border: 1px solid black;
+            color: black;
+
+        }
+    }
+}

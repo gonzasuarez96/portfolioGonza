@@ -1,0 +1,109 @@
+.section{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    padding: 4rem;
+    
+
+    .titulo{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: 5;
+    }
+
+    .image {
+        max-width: 100%;
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        img {
+            max-width: 70%;
+            height: auto;
+        }
+    }
+
+    .spanNombre{
+        font-size: 38px;
+        font-weight: normal;
+    }
+
+    .span{
+        font-size: 38px;
+    }
+
+    .border{
+        border-width: 1px;
+        border-color: black;
+        border-style: dashed;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .button {
+        margin-top: 1rem;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    p{
+        margin-top: 1rem;
+    }
+
+    .imageContainer {
+        position: relative;
+    }
+
+
+
+    .techs {
+        position: absolute; /* Posición absoluta */
+        width: 100%; /* Ancho completo */
+        bottom: 0; /* Colocar en la parte inferior */
+        display: flex; /* Utilizar flexbox */
+        gap: 1.5rem; /* Espaciado entre elementos */
+        margin-left: -1.5rem;
+        margin-bottom: -2.3rem; /* Margen inferior negativo de -2rem */
+        justify-content: flex-start; /* Justificar elementos entre sí */
+    }
+
+    .tech {
+        transform: rotate(-15deg); /* Rotación de -15 grados */
+
+    }
+
+    .techImg {
+        width: 100%;
+        height: auto;
+    }
+
+    .socialMedia {
+        margin-top: 1rem;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flecha {
+        padding: 1rem; 
+        display: inline-block;
+        cursor: pointer; 
+        bottom: 0;
+        animation: moveUpDown 1.5s infinite;
+    }
+
+    @keyframes moveUpDown {
+        100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-5px); /* Puedes ajustar la distancia del movimiento */
+        }
+    }
+}
